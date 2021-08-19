@@ -30,6 +30,7 @@ export default function Forecast() {
         <button onClick={() => setForecastType('/daily')}>5-day</button>
         <button onClick={() => setForecastType('/hourly')}>Today</button>
       </div>
+      <div className="table">
       <table>
         <thead>
           <tr>
@@ -56,6 +57,7 @@ export default function Forecast() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
